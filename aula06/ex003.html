@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            background-color: rebeccapurple;
+            color: palevioletred;
+            font: normal 2em arial;
+        }
+        h1{
+            color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+    <script>
+        //Recebendo o valor do tipo String e convertendo-o para o tipo Number
+
+        var n1 = Number(window.prompt("Digite um número: ")); //Utilizamdo "Number()"
+        var n2 = Number.parseFloat(window.prompt("Digite outro númmero: ")); //Utilizando o "Number.parseFloat()"
+        //Fazendo a soma das var anteriores
+        var soma = n1 + n2;
+
+        //Mostrando o resultado de var soma
+        window.alert('O resultado da soma dos números é igual a '+soma);
+
+        //A mesma lógica para conversões de valores tipo Number para String
+
+        window.alert(`Convertendo os números para o tipo String e concatenando-os: ${n1.toString()}${String(n2)}`);
+
+        window.alert(`Provando com typeOf que as variáveis foram convertidas para String: var n1[${typeof(n1.toString())}] | var n2[${typeof(String(n2))}`);
+    </script>
+</body>
+</html>
